@@ -1,0 +1,58 @@
+/* 
+Universal Styling 
+
+To maintain stylistic consistency across the app, there
+are several styles here that will apply to many components.
+
+Bootstrap styling is also present in many components - mostly
+for page structuring. 
+
+There are also some css pages dedicated to specific components
+for specific styling/formatting reasons: 
+
+ - CompanyCard.css
+ - JobCard.css
+ - NavBar.css
+ - index.css (for font-family)
+ */
+
+/* Background Styling */
+body {
+    background-image: url(../public/images/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+
+/* General Form Styling - Profile.js, Login.js, Signup.js, SearchForm.js */
+input:focus,
+input:active,
+button:focus,
+button:active {
+    box-shadow: none !important;
+}
+
+.form-label {
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Heading Text Styling - CompanyDetail.js, Profile.js, Login.js, Signup.js */
+.heading-text {
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(52, 48, 47);
+}
+
+/* Home Page and Loading Widget styling - Home.js, Loading.js */
+.Home,
+.Loading {
+    height: calc(100vh - 150px);
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgb(52, 48, 47);
+}
